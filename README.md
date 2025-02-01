@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SC Big-Mic SRL - Producător de var bulgăre și var pastă folosind metode tradiționale. Calitate și tradiție în fiecare produs.">
+    <meta name="keywords" content="var bulgăre, var pastă, producător var, var tradițional, construcții, agricultură">
     <title>BIG-MIC - Var Traditional</title>
     <style>
         body {
@@ -21,58 +24,48 @@
             display: flex;
             justify-content: center;
             padding: 10px;
-            flex-direction: column;
+            flex-wrap: wrap;
         }
         nav a {
-            margin: 5px 0;
+            margin: 5px 15px;
             text-decoration: none;
             color: #4e342e;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropdown-content {
-            display: none;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            padding: 10px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            position: absolute;
-            top: 100%;
-            left: 0;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #8d6e63;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-weight: bold;
         }
         .hero {
             background-image: url('https://raw.githubusercontent.com/radutz00/var/main/WhatsApp%20Image%202024-11-17%20at%2001.56.58.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 50px 0;
+            padding: 100px 20px;
             text-align: center;
         }
         .hero h2 {
             font-size: 2.5rem;
             margin: 0;
         }
+        .cta-button {
+            background-color: #8d6e63;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: inline-block;
+        }
         .section-header {
             text-align: center;
             font-size: 2rem;
             color: #4e342e;
             margin-bottom: 20px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
         }
         .card {
             width: 300px;
@@ -81,7 +74,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
-            margin: 20px;
         }
         .card img {
             width: 100%;
@@ -113,10 +105,12 @@
             padding: 20px;
             background-color: #ede7e6;
             border-radius: 10px;
+            flex-wrap: wrap;
         }
         .contact-info div {
             width: 30%;
             text-align: center;
+            margin: 10px 0;
         }
         .contact-info h3 {
             color: #4e342e;
@@ -125,8 +119,48 @@
             font-size: 16px;
             color: #5d4037;
         }
-
-        /* Popup styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ede7e6;
+            border-radius: 10px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #4e342e;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        form button {
+            background-color: #8d6e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #8d6e63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .social-media {
+            margin-top: 10px;
+        }
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
         .popup {
             display: none;
             position: fixed;
@@ -159,21 +193,17 @@
 <body>
     <header>
         <h1>BIG-MIC - Var Traditional</h1>
+        <nav>
+            <a href="#despre">Despre Noi</a>
+            <a href="#istorie">Povestea Noastră</a>
+            <a href="#produse">Produse</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <div class="dropdown">
-            <a href="#">Despre Noi</a>
-            <div class="dropdown-content">
-                <a href="#despre">Despre Firma</a>
-                <a href="#istorie">Povestea Noastră</a>
-                <a href="#produse">Produse</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
 
     <div class="hero">
-        <h2>Calitate si Traditie in Productia de Var</h2>
+        <h2>Calitate și Tradiție în Producția de Var</h2>
+        <a href="#produse" class="cta-button">Descoperă Produsele Noastre</a>
     </div>
 
     <section id="despre">
@@ -196,49 +226,61 @@
 
     <section id="produse">
         <h2 class="section-header">Produsele Noastre</h2>
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+        <div class="card-container">
             <div class="card">
                 <img src="https://i.imgur.com/c2OMu1G.jpeg" alt="Var Bulgăre">
-                <h3>Var Bulgare</h3>
-                <p>„Imaginați-vă un material născut din natură, gata să vă ajute în cele mai diverse proiecte. Varul bulgare este un aliat puternic, potrivit pentru construcții rezistente, igienizare sau echilibrul solului. Practic și durabil, devine rapid indispensabil în gospodăria ta.”</p>
+                <h3>Var Bulgăre</h3>
+                <p>„Imaginați-vă un material născut din natură, gata să vă ajute în cele mai diverse proiecte. Varul bulgăre este un aliat puternic, potrivit pentru construcții rezistente, igienizare sau echilibrul solului. Practic și durabil, devine rapid indispensabil în gospodăria ta.”</p>
                 <button onclick="openPopup('VarBulgare')">Află mai multe</button>
             </div>
-
             <div class="card">
-                <img src="https://raw.githubusercontent.com/radutz00/var/main/WhatsApp%20Image%202024-11-17%20at%2001.56.32.jpeg" alt="Imagine tradițională" style="margin-top: 20px; width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="https://raw.githubusercontent.com/radutz00/var/main/WhatsApp%20Image%202024-11-17%20at%2001.56.32.jpeg" alt="Var Pastă">
                 <h3>Var Pastă</h3>
                 <p>„În fiecare gospodărie, există momente când soluțiile simple sunt cele mai eficiente. Varul pastă este ideal pentru tencuieli și zugrăveli care necesită durabilitate și o aderență excelentă. Ușor de aplicat și foarte versatil.”</p>
                 <button onclick="openPopup('VarPaste')">Află mai multe</button>
             </div>
-             </section>
+        </div>
+    </section>
 
     <section id="contact">
         <h2 class="section-header">Contact</h2>
         <div class="contact-info">
-            
             <div>
                 <h3>Telefon</h3>
                 <p>0758280873</p>
             </div>
-            
-            
             <div>
                 <h3>Email</h3>
                 <p>radutzu2009@yahoo.com</p>
             </div>
-            
-            
-            
             <div>
                 <h3>Adresa</h3>
                 <p>SC Big-Mic SRL, Strada Barace, numar 527, Comuna Valea Mare Pravat, Judet Arges</p>
             </div>
         </div>
-    </section>
-        </div>
+        <form action="submit_form.php" method="POST">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+            
+            <button type="submit">Trimite Mesaj</button>
+        </form>
     </section>
 
-    <!-- Modal pentru Var Bulgare -->
+    <footer>
+        <p>© 2024 SC Big-Mic SRL. Toate drepturile rezervate.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Popup pentru Var Bulgăre -->
     <div id="VarBulgareModal" class="popup">
         <div class="popup-content">
             <h3>Var Bulgăre - Detalii Ambalare</h3>
@@ -247,7 +289,7 @@
         </div>
     </div>
 
-    <!-- Modal pentru Var Pastă -->
+    <!-- Popup pentru Var Pastă -->
     <div id="VarPasteModal" class="popup">
         <div class="popup-content">
             <h3>Var Pastă - Detalii Ambalare</h3>
@@ -255,10 +297,6 @@
             <button onclick="closePopup('VarPaste')">Închide</button>
         </div>
     </div>
-
-    <footer>
-        <p>© 2024 SC Big-Mic SRL. Toate drepturile rezervate.</p>
-    </footer>
 
     <script>
         function openPopup(product) {
