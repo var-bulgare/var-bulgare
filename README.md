@@ -265,22 +265,7 @@
                 <h3>Adresa</h3>
                 <p>SC Big-Mic SRL, Strada Barace, numar 527, Comuna Valea Mare Pravat, Judet Arges</p>
             </div>
-        </div>
-<h2>Contactează-ne</h2>
-<form action="https://formspree.io/f/mjkgnnbz" method="POST">
-    <label>
-        Email-ul tău:
-        <input type="email" name="email" required>
-    </label>
 
-    <label>
-        Mesajul tău:
-        <textarea name="message" required></textarea>
-    </label>
-
-    <button type="submit">Trimite mesajul</button>
-</form>
-</form>
         </form>
     </section>
 
