@@ -265,7 +265,19 @@
                 <h3>Adresa</h3>
                 <p>SC Big-Mic SRL, Strada Barace, numar 527, Comuna Valea Mare Pravat, Judet Arges</p>
             </div>
-
+<div style="width: 100%; max-width: 600px; margin: auto;">
+    <h3>Locația noastră</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.1610972864447!2d25.10381!3d45.2952125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b3285132548583%3A0x459df49022845b23!2s74W3%2B3JP%2C%20117805%20Valea%20Mare%20Prav%C4%83%C8%9B!5e0!3m2!1sen!2sro!4v1699639016234!5m2!1sen!2sro" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+       
         </form>
     </section>
 
